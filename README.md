@@ -31,6 +31,7 @@ __Travailler dans le projet fourni mailreader-ex1-ini__
 Étapes :
 * Dans un premier temps on remplace les codes retour par des constantes.
 * Division de la méthode `compare` à l'aide de sous méthodes pour comparer avec précision; cela consiste à remplacer chaque condition par une méthode plus parlante.
+* Pour chaque étape de tri, on ajoute une méthode dédiée.
 
 Raccourcis clavier à connaître : 
 * ALT-SHIFT-S : fonctions Eclipse de génération de sources (ex : constructeurs)
