@@ -28,6 +28,10 @@ __Travailler dans le projet fourni mailreader-ex1-ini__
 
 1) Réusiner la classe `MailComparator`
 
+Étapes :
+* Dans un premier temps on remplace les codes retour par des constantes.
+* Division de la méthode `compare` à l'aide de sous méthodes pour comparer avec précision; cela consiste à remplacer chaque condition par une méthode plus parlante.
+
 Raccourcis clavier à connaître : 
 * ALT-SHIFT-S : fonctions Eclipse de génération de sources (ex : constructeurs)
 * ALT-SHIFT-T : fonctions de réusinage
