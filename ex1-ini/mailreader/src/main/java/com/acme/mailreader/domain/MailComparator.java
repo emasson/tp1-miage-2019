@@ -1,8 +1,6 @@
-package com.acme.mailreader.infrastructure;
+package com.acme.mailreader.domain;
 
 import java.util.Comparator;
-
-import com.acme.mailreader.domain.Mail;
 
 /**
  * Comparateur de mails

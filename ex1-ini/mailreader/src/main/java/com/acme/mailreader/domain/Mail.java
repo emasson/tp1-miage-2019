@@ -2,8 +2,7 @@ package com.acme.mailreader.domain;
 
 import java.time.Instant;
 
-import com.acme.mailreader.infrastructure.DateIncorrecteException;
-import com.acme.mailreader.infrastructure.DateIncorrecteException.ErreurDate;
+import com.acme.mailreader.domain.DateIncorrecteException.ErreurDate;
 
 public class Mail {
 
