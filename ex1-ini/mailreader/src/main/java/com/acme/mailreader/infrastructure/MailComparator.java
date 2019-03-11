@@ -1,4 +1,4 @@
-package com.acme.mailreader.utils;
+package com.acme.mailreader.infrastructure;
 
 import java.util.Comparator;
 
