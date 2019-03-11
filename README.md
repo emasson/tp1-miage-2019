@@ -56,11 +56,17 @@ public static void main(String[] args) {
 Conception :
 
 ![diag sequence](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/bflorat/tp1-miage-2019/master/diag1.puml&ttt=1)
-![diag classe](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/bflorat/tp1-miage-2019/master/diag1.puml&ttt=1)
-
 Prévoir une cinquième couche `commun` pour les éléments communs à toutes les couches comme les exceptions. 
 
 `MailSender` est une interface, le choix de l'implémentation est fait par l'application en fonction de la valeur du booléen `production`.
+
+On se base sur le diagramme indiqué dans le cours :
+
+![découpage en couches](https://imgur.com/GIUaEfn.png)
+
+Etapes :
+* On renomme les packages actuels, exemple : modele en domain
+* Ajout des classes manquantes
 
 # Exercice 3 - Injection de dépendances avec Guice
 _Temps estimé : 20 mins_
