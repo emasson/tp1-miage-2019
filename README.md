@@ -1,5 +1,5 @@
 # Nom des étudiants de ce binôme 
-(les DEUX noms) : XXXXX et XXXXXX
+MALINGE Quentin et MASSON Emilien
 
 Commentaires éventuels des étudiants : XXXXXX
 
