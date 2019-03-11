@@ -20,18 +20,13 @@ public class MailComparator implements Comparator<Mail> {
 		if (unMailEstNull(mail1, mail2))
 			return MAILS_EQUALS;
 		if (importanceDifferents(mail1, mail2)) {
-			if (mail1.isImportant() && !mail2.isImportant())
-				return FIRST_BIGGER;
-			else
-				return FIRST_SMALLER;
+			return triParImportances(mail1, mail2);
 		}
 		if (statutsDifferents(mail1, mail2)) {
-			int comp = mail1.getStatut().ordinal()
-					- mail2.getStatut().ordinal();
-			return comp > 0 ? FIRST_BIGGER : FIRST_SMALLER;
+			return triParStatuts(mail1, mail2);
 		}
 		if (sujetsDifferents(mail1, mail2))
-			return mail2.getSujet().compareTo(mail1.getSujet());
+			return triParSujets(mail1, mail2);
 		return mail2.getDate().compareTo(mail1.getDate());
 	}
 	
@@ -49,6 +44,23 @@ public class MailComparator implements Comparator<Mail> {
 	
 	private Boolean sujetsDifferents(Mail mail1, Mail mail2) {
 		return mail1.getSujet() != mail2.getSujet();
+	}
+	
+	private int triParImportances(Mail mail1, Mail mail2) {
+		if (mail1.isImportant() && !mail2.isImportant())
+			return FIRST_BIGGER;
+		else
+			return FIRST_SMALLER;
+	}
+	
+	private int triParStatuts(Mail mail1, Mail mail2) {
+		int comp = mail1.getStatut().ordinal()
+				- mail2.getStatut().ordinal();
+		return comp > 0 ? FIRST_BIGGER : FIRST_SMALLER;
+	}
+	
+	private int triParSujets(Mail mail1, Mail mail2) {
+		return mail2.getSujet().compareTo(mail1.getSujet());
 	}
 	
 }
